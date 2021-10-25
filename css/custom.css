@@ -1,0 +1,128 @@
+* {
+    color: #f8f8ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #050505;
+}
+
+.master-container {
+    margin: 10px auto;
+    padding: 75px;
+    max-width: 1400px;
+}
+
+.title {
+    float: left;
+}
+
+.title h1 {
+    font-size: 4vmin;
+    font-weight: bold;
+    margin-bottom: 1vmin;
+    margin-top: 0;
+}
+
+.title h2 {
+    font-size: 1.5vmin;
+    margin-top: 0;
+}
+
+#twitter-icon {
+    float: right;
+    width: 4vmin;
+}
+
+.showreel {
+    margin-top: 7vmin;
+    width: 100%;
+    height: 60vmin;
+}
+
+.client-area {
+    text-align: center;
+}
+
+.client-area h1 {
+    font-weight: 100;
+    margin-top: 6%;
+    margin-bottom: 0%;
+}
+
+.client-area h2 {
+    font-size: 1.5vmin;
+    margin-top: 0;
+}
+
+.client-area h2 a {
+    color: inherit;
+    cursor: pointer;
+}
+
+.client-area h2 a:hover {
+    text-decoration: underline
+}
+
+.video-grid {
+    height: 70vmin;
+    margin-top: 8vmin;
+    margin-bottom: 12vmin;
+}
+
+.video-grid .row {
+    height: 35vmin;
+}
+
+.video-grid .row .video-container {
+    height: 100%;
+}
+
+.video-container iframe {
+    margin: 2%;
+    width: 96%;
+}
+
+.quote-area {
+    margin-top: 8vmin;
+}
+
+#result {
+    text-align: center;
+    font-weight: 200;
+}
+
+/* Media Query Section */
+
+@media only screen and (max-width: 1200px) {
+    .title {
+        text-align: center;
+        width: 100%
+    }
+
+    .title h1 {
+        font-size: 5vmin;
+    }
+
+    .title h2 {
+        font-size: 2vmin;
+    }
+
+    #twitter-icon {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-height: 900px) {
+    .client-area h2 {
+        font-size: 2vmin;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .client-area h2 {
+        font-size: 3vmin;
+    }
+}
