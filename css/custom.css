@@ -120,6 +120,16 @@ body {
     letter-spacing: 0.2vmin;
     font-weight: 300;
 }
+
+.title-item {
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 300;
+}
 /* Media Query Section */
 
 @media only screen and (max-width: 1200px) {
