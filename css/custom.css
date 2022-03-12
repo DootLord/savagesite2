@@ -1,5 +1,5 @@
 * {
-    color: #f8f8ff;
+    color: #eeeeee;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -42,12 +42,14 @@ body {
 
 .client-area {
     text-align: center;
+    margin-top:40vmin;
 }
 
-.client-area h1 {
+.thin-title {
     font-weight: 100;
-    margin-top: 6%;
-    margin-bottom: 0%;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    text-align: center;
 }
 
 .client-area h2 {
@@ -66,7 +68,7 @@ body {
 
 .video-grid {
     height: 70vmin;
-    margin-top: 8vmin;
+    margin-top: 6.5vmin;
     margin-bottom: 12vmin;
 }
 
@@ -92,6 +94,32 @@ body {
     font-weight: 200;
 }
 
+.text-container {
+    margin-top:1%;
+    display: inline-block;
+}
+
+.text-container h2 {
+    /* text-align: center; */
+}
+
+.features-text {
+    width: 100%;
+}
+
+.features-text ul {
+    width:50%;
+    float:left;
+    text-align: center;
+}
+
+.features-text ul li {
+    list-style-type: none;
+    margin-top: 2%;
+    font-size: 2.5vmin;
+    letter-spacing: 0.2vmin;
+    font-weight: 300;
+}
 /* Media Query Section */
 
 @media only screen and (max-width: 1200px) {

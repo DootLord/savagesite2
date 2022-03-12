@@ -8,6 +8,64 @@ $(document).ready(function () {
 });
 
 
+var leftAnimText = ["After spending over five years studying the art of the edit and all the intricacies that it comes with I have been fortunate enough to begin a career in the industry.Working inside of Davinci Resolve alongside powerhouse names and companies in the Influencer space such as Tru3Ta1ent, Simply History, BearBubb, MoonzyCat, InTheBlack Media Consulting and other significant bodies, I am able to excel at the editing, sound mixing and color grading stages to deliver you an edit you'll be proud of. "];
+var rightAnimText = [];
+
+
+fetch("animText.json").then(response => response.json()).then(json => initAnimTable(json));
+
+function initAnimTable(data) {
+    var listLeft = document.getElementById("list-left");
+    var listRight = document.getElementById("list-right");
+
+    // For this we hope that the length of data.left is the same as data.right
+    for (var i = 0; data.left.length > i; i++) {
+        listLeft.children[i].setAttribute("animText", data.left[i]);
+        listRight.children[i].setAttribute("animText", data.right[i]);
+
+        listLeft.children[i].onclick = fadeOutList;
+    }
+}
+
+// function fadeOutList(e) {
+//     var listLeft = document.getElementById("list-left").children;
+//     var listRight = document.getElementById("list-right").children;
+//     var speed = 125;
+
+//     var animText = e.path[0].getAttribute("animText");
+//     for (var i = 0; listLeft.length > i; i++) {
+//         setTimeout((listItem) => {
+//             listItem.classList.add("animate__fadeOutLeft")
+//         }, speed * i, listLeft[i])
+//     }
+
+//     for (var i = 0; listRight.length > i; i++) {
+//         setTimeout((listItem) => {
+//             listItem.classList.add("animate__fadeOutRight")
+//         }, speed * i, listRight[i])
+//     }
+// }
+
+// function fadeInList() {
+//     var listLeft = document.getElementById("list-left").children;
+//     var listRight = document.getElementById("list-right").children;
+//     var speed = 125;
+
+//     // var animText = e.path[0].getAttribute("animText");
+//     for (var i = listLeft.length - 1; 0 > i; i--) {
+//         console.log(i);
+//         setTimeout((listItem) => {
+//             listItem.classList.add("animate__fadeInLeft")
+//         }, speed * i, listLeft[i])
+//     }
+
+//     for (var i = listLeft.length - 1; i > 0; i--) {
+//         setTimeout((listItem) => {
+//             listItem.classList.add("animate_fadeInRight")
+//         }, speed * i, listRight[i])
+//     }
+// }
+
 // $(".quote-select").change(function () {
 //     var validQuery = true;
 //     var queryIssue = false;
@@ -41,4 +99,3 @@ $(document).ready(function () {
 //         $("#result").text("Quote Price: £" + resultValue);
 //     }
 // })
-
