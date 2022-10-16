@@ -100,7 +100,7 @@ body {
 }
 
 .video-grid-paragraph {
-    font-size: 14px !important;
+    font-size: 2vmin;
 }
 
 .video-container iframe {
@@ -180,12 +180,6 @@ body {
 
     nav a {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .video-grid-paragraph {
-        font-size: 20px !important;
     }
 }
 
