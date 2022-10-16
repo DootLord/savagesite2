@@ -153,14 +153,22 @@ body {
     }
 
     .title h1 {
-        font-size: 5vmin;
+        /* font-size: 5vmin; */
     }
 
     .title h2 {
-        font-size: 2vmin;
+        /* font-size: 2vmin; */
     }
 
     #twitter-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    nav a {
         display: none;
     }
 
@@ -220,4 +228,13 @@ hr {
 
 .nav-list {
     margin-left: 40%
+}
+
+.nav-list li a {
+    line-height: 6vmin;
+}
+
+.workarea {
+    float:left;
+    width: 100%;
 }
