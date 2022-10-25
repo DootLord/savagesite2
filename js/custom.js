@@ -12,7 +12,7 @@ var leftAnimText = ["After spending over five years studying the art of the edit
 var rightAnimText = [];
 
 
-fetch("animText.json").then(response => response.json()).then(json => initAnimTable(json));
+// fetch("animText.json").then(response => response.json()).then(json => initAnimTable(json));
 
 function initAnimTable(data) {
     var listLeft = document.getElementById("list-left");
@@ -23,7 +23,7 @@ function initAnimTable(data) {
         listLeft.children[i].setAttribute("animText", data.left[i]);
         listRight.children[i].setAttribute("animText", data.right[i]);
 
-        listLeft.children[i].onclick = fadeOutList;
+        // listLeft.children[i].onclick = fadeOutList;
     }
 }
 
