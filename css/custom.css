@@ -85,8 +85,7 @@ body {
 }
 
 .video-grid {
-    height: 70vmin;
-    margin-top: 6.5vmin;
+    margin-top: 8vmin;
     margin-bottom: 12vmin;
     width: 50%
 }
@@ -245,4 +244,14 @@ hr {
 .workarea {
     float: left;
     width: 100%;
+}
+
+.brand-integration-area img {
+    width: 60%;
+}
+
+.brands li img{
+    width:27%;
+    float:left;
+    margin-left:8vmin;
 }
