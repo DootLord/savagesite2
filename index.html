@@ -1,317 +1,421 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #111;">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="initial-scale=1.0, width=device-width"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Freelance editor tailored to influencers. My work speaks for itself.">
-    <!-- <meta name="viewport" content="width=device-width"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <title>Danny Savage</title>
+    <link rel="stylesheet" href="css/modern.css">
+    <title>Danny Savage | Professional Video Editor</title>
 </head>
 
-<body style="background-color:#111; min-width: fit-content !important">
-    <nav id="navbar">
-        <div class="title">
-            <h1 style="font-family: Monstsrrat;">DANNY SAVAGE</h1>
-            <h2>Edit | Color | Sound</h2>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <nav id="navbar" class="nav-modern">
+        <div class="nav-wrapper container">
+            <div class="title">
+                <h1>DANNY SAVAGE</h1>
+                <h2><span>Edit</span> | <span>Color</span> | <span>Sound</span></h2>
+            </div>
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <li><a href="#showreel" class="nav-link">Showreel</a></li>
+                    <li><a href="#skills" class="nav-link">Skills & Experience</a></li>
+                    <li><a href="#client" class="nav-link">Client Work</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://discord.gg/u5npCca5" target="_blank" class="social-icon"><img src="img/discord.png"
+                            alt="Discord icon"></a>
+                    <a href="mailto:mrsavagework@gmail.com" target="_blank" class="social-icon"><img src="img/mail.png"
+                            alt="Email"></a>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <ul class="nav-list">
-            <li><a href="#showreel"> Showreel </a></li>
-            <li><a href="#skills"> Skills & Experience</a></li>
-            <li><a href="#client"> Client Work</a></li>
-        </ul>
-        <a href="https://discord.gg/u5npCca5" target="_blank"><img class="icons" src="img/discord.png"
-                alt="twitter icon"></img></a>
-        <a href="mailto:mrsavagework@gmail.com" target="_blank"><img class="icons" style="filter: brightness(0) invert(1);
-            " src="img/mail.png" alt="twitter icon"></img></a>
     </nav>
+    
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#showreel">Showreel</a></li>
+            <li><a href="#skills">Skills & Experience</a></li>
+            <li><a href="#client">Client Work</a></li>
+        </ul>
+    </div>
+    
     <main class="master-container">
-        <iframe id="showreel" class="showreel profile col s12"
-            src="https://www.youtube.com/embed/zjRJw034Nqs?controls=0" title="Danny Savage Effect Reel" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-
-        <div class="features-text">
-            <hr>
-            <h1 class="thin-title scrollToOffset" id="skills">SKILLS & EXPERIENCE</h1>
-
-            <ul id="list-left">
-                <li class="animate__animated">Full Edits</li>
-                <li class="animate__animated">Color Grading</li>
-                <li class="animate__animated">Sound Mixing</li>
-                <li class="animate__animated">VFX</li>
-                <li class="animate__animated">Motion Graphics</li>
-            </ul>
-
-            <ul id="list-right">
-                <li class="animate__animated">Gaming</li>
-                <li class="animate__animated">Vlog</li>
-                <li class="animate__animated">Video Essay</li>
-                <li class="animate__animated">Corporate</li>
-                <li class="animate__animated">Commercial</li>
-            </ul>
-        </div>
-
-        <div class="client-area brand-integration-area">
-            <hr>
-            <h1 class="client-work thin-title scrollToOffset" id="client" style="margin-bottom:5vmin;">BRAND
-                INTEGRATIONS</h1>
-            <ul class="brands">
-                <li><a href="https://uk.manscaped.com/"><img style="margin-top:5vmin;" src="img/brands/man.png"
-                            alt=""></a></li>
-                <li><a href="https://raidshadowlegends.com/"></a><img style="margin-top:2vmin;" src="img/brands/pia.png"
-                        alt=""></a></li>
-                <li><a href="https://www.privateinternetaccess.com/"></a><img src="img/brands/raid.png" alt=""></a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="client-area" style="margin-top: 26vmin">
-            <hr>
-            <h1 class="client-work thin-title scrollToOffset" id="client">CLIENT WORK</h1>
-        </div>
-
-        <div class="workarea">
-            <div class="video-grid-text">
-                <h1><a href="https://www.youtube.com/c/Simplehistory"> Simple History LTD </a></h1>
-                <p class="video-grid-paragraph">Simple History is a prominent animation channel that takes deep dives
-                    into the interesting side of
-                    historic events. <br><br> I have been a primary editor with Simple History for (at the time of
-                    writing) two months and have made many great stories that span decades.</p>
-            </div>
-
-            <div class="video-grid">
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/I2IrHwIB9m8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTZFGVL5fs4"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transforming Ideas Into Visual Stories</h1>
+                    <p class="hero-subtitle">Professional video editing that elevates your content</p>
                 </div>
+            </div>
+        </section>
+        
+        <div class="showreel-container">
+            <iframe id="showreel" class="showreel profile"
+                src="https://www.youtube.com/embed/zjRJw034Nqs?controls=0" title="Danny Savage Effect Reel" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
 
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bt37jLvF5Ug"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+        <div class="features-section" id="skills">
+            <div class="container">
+                <h1 class="section-title">SKILLS & EXPERIENCE</h1>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <ul id="list-left" class="skill-list">
+                            <li class="animate__animated skill-item"><i class="material-icons">movie</i> Full Edits</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">palette</i> Color Grading</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">volume_up</i> Sound Mixing</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">theaters</i> VFX</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">animation</i> Motion Graphics</li>
+                        </ul>
                     </div>
 
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/coqmaPilyGg"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="skill-category">
+                        <h3>Content Types</h3>
+                        <ul id="list-right" class="skill-list">
+                            <li class="animate__animated skill-item"><i class="material-icons">videogame_asset</i> Gaming</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">videocam</i> Vlog</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">menu_book</i> Video Essay</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">business</i> Corporate</li>
+                            <li class="animate__animated skill-item"><i class="material-icons">store</i> Commercial</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="workarea">
-            <div class="video-grid-text">
-                <h1><a href="https://www.instagram.com/nimbus_coffee_la/">Logan Nathanson</a></h1>
-                <p class="video-grid-paragraph">
-                    Logan is a veteran creator with a massive following over on his <a
-                        href="https://www.tiktok.com/@ourfavoritefinds?lang=en">TikTok</a>. <br><br>
-                    He creates weekly videos around all sorts of wacky gadgets and came to me in order to kickstart his
-                    Youtube page. I have been his primary editor on both his TikToks and his Youtube for over a year
-                    now.
-                </p>
-            </div>
-
-            <div class="video-grid">
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0b5eZaHyTgw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+        <div class="brand-section">
+            <div class="container">
+                <h1 class="section-title" id="brand-integrations">BRAND INTEGRATIONS</h1>
+                <div class="brands-container">
+                    <div class="brand-card">
+                        <a href="https://uk.manscaped.com/" target="_blank"><img src="img/brands/man.png" alt="Manscaped"></a>
                     </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/o3H8qPDSWW8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="brand-card">
+                        <a href="https://www.privateinternetaccess.com/" target="_blank"><img src="img/brands/pia.png" alt="Private Internet Access"></a>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OoahYaiup4c"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KD4yPU-52JI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                    <div class="brand-card">
+                        <a href="https://raidshadowlegends.com/" target="_blank"><img src="img/brands/raid.png" alt="Raid: Shadow Legends"></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="workarea">
-            <div class="video-grid-text">
-                <h1><a href="https://www.instagram.com/nimbus_coffee_la/">Nimbus</a></h1>
-                <p class="video-grid-paragraph">Nimbus is an LA based coffee house with a theme of potions and wizardry.
-                    <br><br> Nimbus was looking
-                    for a fresh take on their online presence and wanted to show their branding with creative edits.
-                </p>
-            </div>
-
-            <div class="video-grid">
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tXMZQCg1-_4"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+        <div class="client-section" id="client">
+            <div class="container">
+                <h1 class="section-title">CLIENT WORK</h1>
+                
+                <!-- Simple History -->
+                <div class="client-card">
+                    <div class="client-info">
+                        <h2><a href="https://www.youtube.com/c/Simplehistory" target="_blank">Simple History LTD</a></h2>
+                        <p>Simple History is a prominent animation channel that takes deep dives into the interesting side of
+                            historic events. <br><br> I have been a primary editor with Simple History for (at the time of
+                            writing) two months and have made many great stories that span decades.</p>
                     </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qs7TZvVaieE"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                    
+                    <div class="video-gallery">
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/I2IrHwIB9m8" title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/ZTZFGVL5fs4" title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/Bt37jLvF5Ug" title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/coqmaPilyGg" title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iApB-V7RJxQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                <!-- Logan Nathanson -->
+                <div class="client-card">
+                    <div class="client-info">
+                        <h2><a href="https://www.instagram.com/nimbus_coffee_la/" target="_blank">Logan Nathanson</a></h2>
+                        <p>
+                            Logan is a veteran creator with a massive following over on his <a
+                                href="https://www.tiktok.com/@ourfavoritefinds?lang=en" target="_blank">TikTok</a>. <br><br>
+                            He creates weekly videos around all sorts of wacky gadgets and came to me in order to kickstart his
+                            Youtube page. I have been his primary editor on both his TikToks and his Youtube for over a year
+                            now.
+                        </p>
                     </div>
+                    
+                    <div class="video-gallery">
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0b5eZaHyTgw"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o3H8qPDSWW8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OoahYaiup4c"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KD4yPU-52JI"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qkgTjHbtXjo"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                <!-- Nimbus -->
+                <div class="client-card">
+                    <div class="client-info">
+                        <h2><a href="https://www.instagram.com/nimbus_coffee_la/" target="_blank">Nimbus</a></h2>
+                        <p>Nimbus is an LA based coffee house with a theme of potions and wizardry.
+                            <br><br> Nimbus was looking
+                            for a fresh take on their online presence and wanted to show their branding with creative edits.
+                        </p>
+                    </div>
+                    
+                    <div class="video-gallery">
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tXMZQCg1-_4"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qs7TZvVaieE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iApB-V7RJxQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qkgTjHbtXjo"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Misery Machine -->
+                <div class="client-card">
+                    <div class="client-info">
+                        <h2><a href="https://www.youtube.com/c/TheMiseryMachine" target="_blank">Misery Machine</a></h2>
+                        <p>Drew and Yergy run a true crime storytelling channel that uploads a bone
+                            chilling episode once per week. <br><br> I was brought on as their primary editor to enhance their
+                            videos and make them more immersive to the viewer through the use of SFX, color grading and motion
+                            graphics.
+                        </p>
+                    </div>
+                    
+                    <div class="video-gallery">
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MJassS7OOS4"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h15su2JW3hA"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6zzqd9ysOYI"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MY9WSKvTCn0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- After Effects Work -->
+                <div class="client-card">
+                    <div class="client-info">
+                        <h2>After Effects Work</h2>
+                        <p>This is a selection of one off client projects that largely used Motion
+                            Graphic/After Effects.</p>
+                    </div>
+                    
+                    <div class="video-gallery">
+                        <div class="video-row">
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9kSVbgPlOXg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="video-item">
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d9VDLaQmPgM"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="workarea">
-            <div class="video-grid-text">
-                <h1><a href="https://www.youtube.com/c/TheMiseryMachine">Misery Machine</a></h1>
-                <p class="video-grid-paragraph">Drew and Yergy run a true crime storytelling channel that uploads a bone
-                    chilling episode once per week. <br><br> I was brought on as their primary editor to enhance their
-                    videos and make them more immersive to the viewer through the use of SFX, color grading and motion
-                    graphics.
-                </p>
-            </div>
-
-            <div class="video-grid">
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MJassS7OOS4"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h15su2JW3hA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6zzqd9ysOYI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MY9WSKvTCn0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="workarea">
-            <div class="video-grid-text">
-                <h1>After Effects Work</h1>
-                <p class="video-grid-paragraph">This is a selection of one off client projects that largely used Motion
-                    Graphic/After Effects.</p>
-            </div>
-
-            <div class="video-grid">
-                <div class="row">
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9kSVbgPlOXg"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <div class="video-container col s6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d9VDLaQmPgM"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DANNY SAVAGE</h3>
+                    <p>Professional Video Editor</p>
+                    <p>Based in London, UK | Working Worldwide</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>CONTACT</h3>
+                    <p><a href="mailto:mrsavagework@gmail.com">mrsavagework@gmail.com</a></p>
+                    <p><a href="https://discord.gg/u5npCca5" target="_blank">Discord</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>FOLLOW</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="material-icons">language</i></a>
+                        <a href="#" target="_blank"><i class="material-icons">share</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Danny Savage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/modern.js"></script>
 </body>
 
 </html>
