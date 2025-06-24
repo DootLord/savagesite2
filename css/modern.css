@@ -419,6 +419,7 @@ body {
 .client-info {
   padding: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .client-info h2 {
@@ -451,6 +452,36 @@ body {
 
 .client-info p a:hover {
   color: var(--accent-color);
+}
+
+.client-tags {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.client-tag {
+  background: var(--accent-color, #e63946);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.25em 0.8em;
+  border-radius: 999px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.client-tag:hover {
+  background: #fff;
+  color: var(--accent-color, #e63946);
 }
 
 .video-gallery {
