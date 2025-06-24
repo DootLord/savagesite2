@@ -95,4 +95,52 @@ document.addEventListener('DOMContentLoaded', function() {
         
         lastScrollTop = scrollTop;
     });
+
+    // Floating arrow for client-section
+    const clientSection = document.querySelector('.client-section');
+    const clientCards = document.querySelectorAll('.client-card');
+    const arrow = document.getElementById('nextClientArrow');
+
+    function isInClientSection() {
+        const rect = clientSection.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+    }
+
+    function getCurrentCardIndex() {
+        let index = 0;
+        for (let i = 0; i < clientCards.length; i++) {
+            const rect = clientCards[i].getBoundingClientRect();
+            if (rect.top - 100 > 0) {
+                break;
+            }
+            index = i;
+        }
+        return index;
+    }
+
+    function updateArrowVisibility() {
+        if (isInClientSection()) {
+            const idx = getCurrentCardIndex();
+            if (idx < clientCards.length - 1) {
+                arrow.classList.add('visible');
+            } else {
+                arrow.classList.remove('visible');
+            }
+        } else {
+            arrow.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', updateArrowVisibility);
+    window.addEventListener('resize', updateArrowVisibility);
+    updateArrowVisibility();
+
+    arrow.addEventListener('click', function() {
+        const idx = getCurrentCardIndex();
+        if (idx < clientCards.length - 1) {
+            const nextCard = clientCards[idx + 1];
+            const offset = nextCard.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+    });
 });
