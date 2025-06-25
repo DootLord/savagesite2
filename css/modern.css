@@ -6,6 +6,7 @@
   --light-bg: #212121;
   --gradient-start: #1a1a1a;
   --gradient-end: #000;
+  --hero-gradient: linear-gradient(90deg, #e63946, #1d3557, #f1faee, #e63946);
 }
 
 * {
@@ -242,6 +243,32 @@ body {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  filter: blur(8px);
+  transition: none;
+}
+
+.hero-content.hero-animate {
+  animation: heroReveal 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes heroReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.01);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 .hero-title {
@@ -252,14 +279,49 @@ body {
   letter-spacing: 2px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  background: var(--hero-gradient);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: heroGradientMove 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 2px 10px rgba(230,57,70,0.15));
+}
+
+@keyframes heroGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 0;
+  /* animation: subtitleFadeIn 1.2s 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards; */
   text-align: center;
+}
+
+.hero-content.hero-animate .hero-subtitle {
+  opacity: 1;
+}
+
+@keyframes subtitleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 /* Showreel */
@@ -690,49 +752,4 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .nav-wrapper {
-    padding: 1rem;
-  }
-  
-  .title h1 {
-    font-size: 1.4rem;
-  }
-  
-  .title h2 {
-    font-size: 0.8rem;
-  }
-  
-  .hero-title {
-    font-size: 1.6rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-  }
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate__animated {
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-
-.animate__fadeInUp {
-  animation-name: fadeInUp;
-}
+@media screen and

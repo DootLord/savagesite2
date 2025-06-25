@@ -143,4 +143,12 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: offset, behavior: 'smooth' });
         }
     });
+
+    // Hero-section animated intro
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+        setTimeout(() => {
+            heroContent.classList.add('hero-animate');
+        }, 300); // slight delay for effect
+    }
 });
