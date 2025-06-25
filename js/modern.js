@@ -149,6 +149,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroContent) {
         setTimeout(() => {
             heroContent.classList.add('hero-animate');
+            // Glitch effect on title after main animation
+            const heroTitle = heroContent.querySelector('.hero-title');
+            if (heroTitle) {
+                setTimeout(() => {
+                    heroTitle.classList.add('glitch');
+                    setTimeout(() => {
+                        heroTitle.classList.remove('glitch');
+                    }, 1000);
+                }, 1200);
+            }
         }, 300); // slight delay for effect
     }
 });
